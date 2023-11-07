@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap');
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  min-height: 100vh;
+  background: rgb(183,70,113);
+  background: linear-gradient(140deg, rgba(183,70,113,1) 18%, rgba(98,37,176,1) 50%, rgba(64,54,169,1) 96%);
+  font-family: 'Be Vietnam Pro', sans-serif;
+}

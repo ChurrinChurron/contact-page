@@ -1,0 +1,98 @@
+main {
+
+    display: grid;
+    place-content: center;
+    padding: 3em 2em;
+    color: #fff;
+}
+
+main h2 {
+
+    text-align: center;
+    font-size: 2.2em;
+}
+
+main h3 {
+
+    text-align: center;
+    font-size: 1.4em;
+    max-width: 24em;
+}
+
+form {
+
+    margin-top: 3.5em;
+    padding: 2em;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border-radius: 15px;
+}
+
+.form__inputs {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+label {
+
+    display: flex;
+    flex-direction: column;
+    margin: .5em 0;
+    font-size: .9em;
+}
+
+input, textarea, select {
+
+    margin-top: .3em;
+    width: 100%;
+    padding: 1em;
+    border: none;
+    outline: none;
+    border-radius: .8em;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+select {
+
+    appearance: none;
+    background-image: url(../../Expand_down.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+select option, input::placeholder {
+
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+textarea {
+
+    resize: none;
+}
+
+input[type=submit] {
+
+    margin-top: 1em;
+    cursor: pointer;
+    background: #fff;
+    color: rgba(98,37,176,1);
+    font-weight: 600;
+    font-size: 1em;
+}
+
+@media screen and (width > 992px) {
+    
+    main h2 {
+
+        font-size: 3em;
+    }
+    
+    .form__inputs {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: .8em;
+    }
+}
